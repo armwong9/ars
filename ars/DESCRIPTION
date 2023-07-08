@@ -1,0 +1,16 @@
+Package: ars
+Title: Perform Adaptive Rejection Sampling
+Version: 0.1
+Authors@R: c(
+    person("Daniel", "Sunko", email ="daniel_sunko@berkeley.edu", role = c("cre", "aut")),
+    person("Inga", "Armann", email ="inga.huld@berkeley.edu", role = "aut"),
+    person("Arm", "wonghirundacha", email ="arm_wonghirundacha@berkeley.edu", role = "aut")
+    )
+Description: Perform Adaptive Rejection Sampling using the algorithm described in Gilks et al. (1992).
+Encoding: UTF-8
+Imports:
+    numDeriv,
+    assertthat
+Suggests: testthat (>= 3.0.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
