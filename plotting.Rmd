@@ -1,0 +1,39 @@
+---
+title: "plotting"
+author: "Arm Wonghirundacha"
+date: "2022-12-14"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+f <- dnorm
+vals <- rnorm(1000)
+hist(vals, probability = TRUE)
+curve(f, add = TRUE, col = "blue")
+```
+
+```{r}
+f <- function(x) dgamma(x, 2)
+vals <- rgamma(1000, shape=2)
+hist(vals, probability = TRUE)
+curve(f, add = TRUE, col = "blue")
+```
+
+```{r}
+f <- function(x) dbeta(x,2,2)
+vals <- rbeta(1000, 2, 2)
+hist(vals, probability = TRUE)
+curve(f, add = TRUE, col = "blue")
+```
+
+```{r}
+f <- function(x) dbeta(x,2,2)
+vals <- main(f, n=100)
+hist(vals, probability = TRUE)
+curve(f, add = TRUE, col = "blue")
+```
+
